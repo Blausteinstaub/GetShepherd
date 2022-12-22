@@ -1,0 +1,146 @@
+@font-face 
+    {
+    font-family: Silkscreen;
+    src: url("./Silkscreen-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Silkscreen', cursive;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav ul{
+    padding-top: 1rem;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2b2626;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li.logo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    display: block;
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: normal;
+    color: lightgray;
+    position: relative;
+    padding: 1% 0 1% 1%;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: gray;
+    border-radius: 3% 0 0 3%;
+    transition: all 180ms ease-in-out;
+}
+
+nav ul li a:hover{
+    /* color: #000000; */
+    z-index: 1;
+}
+
+nav ul li a:hover::before{
+    color: #e3e9f7;
+    width: 95%;
+    z-index: -1;
+}
+
+nav ul li a:hover::after{
+    z-index: -1;
+    width: 98%;
+}
+
+.con{
+    padding-left: 15.3%;
+    color: #2b2525;
+}
+
+.noSelect{
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -webkit-user-select: none;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+.cursorText{
+    cursor: text;
+}
+.cursorAuto{
+    cursor: auto;
+}
+.cursorNone{
+    cursor: none;
+}
+.cursorNotAllower{
+    cursor: none;
+}
+
+.noTextDeco{
+    text-decoration: none;
+}
+
+.MarkAsLink{
+    text-decoration: underline;
+}
+
+.credists-l{
+    list-style: square;
+    list-style-type: square;
+}
+
+.item-l{
+    list-style: square;
+    list-style-type: square;
+}
+
+@keyframes swiggle{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(1rem);
+    }
+    40%{
+        transform: translateX(-1rem);
+    }
+    60%{
+        transform: translateX(1rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
