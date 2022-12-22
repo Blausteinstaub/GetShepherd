@@ -1,7 +1,27 @@
+/* * {
+    text-transform: uppercase;
+} */
+
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #022;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #008B8B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #007070;
+}
+
 @font-face 
     {
     font-family: Silkscreen;
-    src: url("./Silkscreen-Regular.ttf") format('truetype');
+    src: url("./font.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +37,7 @@ body {
 .card{
     content: "";
     height: auto;
-    width: min-content;
+    width: 25rem;
     background-color: azure;
     margin: .2rem;
     border-radius: 1rem;
@@ -37,7 +57,7 @@ body {
 
 .card>a{
     text-decoration: none;
-    color: darkcyan;   
+    color: rgb(0, 139, 139);   
     font-size: large;
 }
 
@@ -50,7 +70,7 @@ nav ul{
     position: fixed;
     top: 0;
     left: 0;
-    background: #2b2626;
+    background: #022;
 }
 
 nav ul li {
@@ -83,7 +103,7 @@ nav ul li a::before{
     right: 0;
     width: 0;
     height: 100%;
-    background-color: gray;
+    background-color: #008B8B;
     border-radius: 3% 0 0 3%;
     transition: all 180ms ease-in-out;
 }
@@ -171,3 +191,4 @@ nav ul li a:hover::after{
         transform: translateX(0);
     }
 }
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="../assets/main.css">
+    <meta charset="UTF-8">
+    <title>GetShepherd | FAQ</title>
+    <link rel="icon" href="../assets/logo.png">
+    <style>
+        #nav3{
+            background-color: lightblue;
+            margin-left: 2%;
+        }
+        .collapsible {
+          background-color: #022;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 1rem;
+        }
+
+        .active, .collapsible:hover {
+          background-color: #007070;
+        }
+
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #022;
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="nav1"><a style="color: white;" href="..">&nbsp; home</a></li>
+            <li id="nav2"><a style="color: white;" href="../products/">&nbsp; produkte</a></li>
+            <li id="nav3"><a style="color: black;" href="./">&nbsp; FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="con">
+        <div class="wrapper">
+            <h2>Vorteile</h2>
+            <button type="button" class="collapsible">Frische Luft & Bewegung</button>
+                <div class="content" style="display: none;">
+                    <p>Dadurch, dass man jeden Tag ein bis mehrere Male, was von der Rasse abhängt, mit dem Hund Gassi gehen muss oder Agility, falls man Agility macht, trainiert muss, kommt man täglich an die Frische Luft, was sich auch Positiv auf die Gesundheit und das Imunsystem auswirt.</p>
+                </div>
+                <p style="font-size: .1rem;">­</p>
+
+                <button type="button" class="collapsible">Open Section 2</button>
+                <div class="content" style="display: none;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <p style="font-size: .1rem;">­</p>
+
+                <button type="button" class="collapsible">Open Section 3</button>
+                <div class="content" style="display: none;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <p style="font-size: .1rem;">­</p>
+
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
+
