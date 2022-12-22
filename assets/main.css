@@ -1,6 +1,11 @@
-/* * {
+*{
     text-transform: uppercase;
-} */
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Space_Grotesk', cursive;
+}
 
 ::-webkit-scrollbar {
     width: .75rem;
@@ -20,7 +25,7 @@
 
 @font-face 
     {
-    font-family: Silkscreen;
+    font-family: Space_Grotesk;
     src: url("./font.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -28,7 +33,7 @@
 
 body {
     background-color: lightblue;
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Space_Grotesk', cursive;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -87,7 +92,7 @@ nav ul li.logo {
 
 nav ul li a{
     display: block;
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Space_Grotesk', cursive;
     text-decoration: none;
     text-transform: uppercase;
     font-size: normal;
@@ -192,3 +197,20 @@ nav ul li a:hover::after{
     }
 }
 
+.info{
+    background-color: red;
+    border: 0 solid red;
+    border-radius: 1rem;
+}
+
+.info>p{
+    padding: 1rem;
+    padding-top: 0;
+    color: white;
+}
+
+.info>h2{
+    padding: 1rem;
+    padding-bottom: 0;
+    color: white;
+}
